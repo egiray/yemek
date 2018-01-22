@@ -97,6 +97,10 @@ nav ul {
 	font: inherit;
 }
 
+#Menu form{
+	display: inline;
+}
+
 .cartName{
 	width: 54%;
 }

@@ -8,7 +8,7 @@ var TemplateModule = (function() {
 	'use strict';
 	var data ={};
 	
-	/* =================== private metodlar ================= */
+	/** =================== private metodlar ================= */
 	function readJsonFile(file, part) {
 		var rawFile = new XMLHttpRequest();
 		rawFile.overrideMimeType("application/json");
@@ -68,13 +68,13 @@ var TemplateModule = (function() {
 		}
 	}
 
-	/* =================== public metodlar ================== */
+	/** =================== public metodlar ================== */
 	function init() {
 		readJsonFile("https://egiray.github.io/json/menuData.json","menu");
 		readJsonFile("https://egiray.github.io/json/restoranData.json","restoran");
 	}
 
-	/* =============== export edilen public metodlar =============== */
+	/** =============== export edilen metodlar =============== */
 	return {
 		init: init
 	};

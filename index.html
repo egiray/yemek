@@ -30,11 +30,10 @@
 											<ul>
 												<% for (var t=0; t < data.menu.ResultSet[i].Products.length; t++) { %>
 													<li>
-														<span><button onclick="CartModule.addItem({productName:'<%= data.menu.ResultSet[i].Products[t].DisplayName %>', quantity:1, price:'<%= data.menu.ResultSet[i].Products[t].ListPrice %>'})">+</button></span>
+														<button onClick="CartModule.addItem(this)">+</button>
 														<span class="bold"><%= data.menu.ResultSet[i].Products[t].DisplayName %></span>
 														<span class="right"><%= data.menu.ResultSet[i].Products[t].ListPrice %> TL</span>
 														<span><%= data.menu.ResultSet[i].Products[t].Description %></span>
-														
 													</li>
 												<% } %>
 											</ul>
@@ -57,10 +56,9 @@
 							<hr>
 							<span>Toplam:</span>
 							<div class="right">
-								<span id="TotalPrice">12</span>
+								<span id="TotalPrice">0</span>
 								<span> TL</span>
 							</div>
-							
 						</div>
 						<input type="submit" value="Sipariş Ver">				
 					</div>
