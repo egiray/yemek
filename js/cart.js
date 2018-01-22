@@ -23,7 +23,7 @@ var CartModule = (function() {
 											<input type='text' name='quantity' value='"+cart[i].quantity+"' onchange='CartModule.changeQuantity(this.value, "+i+")'> \
 										</td> \
 										<td class='cartPrice'>"+String(cart[i].price).replace(".",",")+" TL</td> \
-										<td class='carDelete' onclick='CartModule.deleteItem("+i+")'><a href='javascript:void(0)'>X</a></td> \
+										<td class='cartDelete' onclick='CartModule.deleteItem("+i+")'><a href='javascript:void(0)'>X</a></td> \
 										<td></td>\
 									</tr>";
 

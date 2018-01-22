@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Template by quackit.com -->
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -33,6 +32,7 @@
 														<button onClick="CartModule.addItem(this)">+</button>
 														<span class="bold"><%= data.menu.ResultSet[i].Products[t].DisplayName %></span>
 														<span class="right"><%= data.menu.ResultSet[i].Products[t].ListPrice %> TL</span>
+														<span class="hidden"><%= data.menu.ResultSet[i].Products[t].ProductId %></span>
 														<span><%= data.menu.ResultSet[i].Products[t].Description %></span>
 													</li>
 												<% } %>
@@ -52,7 +52,7 @@
 						<h3>Siparişiniz</h3>
 							<table id="Cart">
 							</table>
-						<div class="bold bigger">
+						<div id="sum" class="bold bigger">
 							<hr>
 							<span>Toplam:</span>
 							<div class="right">
@@ -60,7 +60,7 @@
 								<span> TL</span>
 							</div>
 						</div>
-						<input type="submit" value="Sipariş Ver">				
+						<button>Sipariş Ver</button>			
 					</div>
 
 				</div>

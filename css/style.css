@@ -66,6 +66,7 @@ p {
 
 a{
 	text-decoration: none;
+	color: red;
 }
 
 ul{
@@ -81,10 +82,16 @@ nav ul {
 #CartHolder {
 	font-size : 10px;
 	position: fixed;
+	padding: 0;
 }
 
 #CartHolder table{
-	width: 100%;
+	width: 240px;
+	padding: 0;
+}
+
+#Cart td{
+	padding: 0;
 }
 
 #TotalPrice{
@@ -97,19 +104,31 @@ nav ul {
 	font: inherit;
 }
 
+#sum{
+	width: 200px;
+}
+
 #Menu form{
 	display: inline;
 }
 
+.hidden{
+	display: none;
+}
 .cartName{
 	width: 54%;
 }
 
 .cartPrice{
 	width: 23%;
+	text-align: center;
+}
+.cartQuantity{
+	width: 8%;
 }
 .cartDelete{
 	width: 8%;
+	font-weight: bold;
 }
 
 .right{
