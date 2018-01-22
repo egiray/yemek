@@ -1,0 +1,113 @@
+body {
+	margin:0;
+	padding:0;
+	font-family: Sans-Serif;
+	line-height: 1.5em;
+	font-size: 11px;
+}
+
+#header {
+	background: #ccc;
+	height: 100px;
+}
+
+#header h1 {
+	margin: 0;
+	padding-top: 15px;
+}
+
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 100%;
+}
+
+#nav {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 240px;
+	margin-left: -100%;
+	background: #eee;
+}
+
+#footer {
+	clear: left;
+	width: 100%;
+	background: #ccc;
+	text-align: center;
+	padding: 4px 0;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+			
+#content {
+	margin-left: 240px; /* Same as 'nav' width */
+}
+
+.innertube {
+	margin: 15px; /* Padding for content */
+	margin-top: 0;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.bigger{
+	font-size: 14px;
+}
+p {
+	color: #555;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style: none;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#CartHolder {
+	font-size : 10px;
+	position: fixed;
+}
+
+#CartHolder table{
+	width: 100%;
+}
+
+#TotalPrice{
+	font-weight: bold;
+}
+#Cart input{
+	width: 20px;
+	border: 1px solid #e5e5e5;
+	box-shadow: 0 -1px 0 rgba(51,51,51,0.2);
+	font: inherit;
+}
+
+.cartName{
+	width: 54%;
+}
+
+.cartPrice{
+	width: 23%;
+}
+.cartDelete{
+	width: 8%;
+}
+
+.right{
+	float: right !important;
+}
